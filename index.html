@@ -1,51 +1,67 @@
 
- <html>
- <head> 
-    <title>패턴4</title> 
-    <meta name="viewport" content="user-scalable=no,initial
-    scale=1,maximum-scale=1"> 
-    <style> 
-        * { 
-            margin: 0; 
-            padding: 0;
-        } 
-        body { 
-            width: 960px; 
-            margin: 0 auto; 
-            overflow: hidden; 
-        } 
-        #menu { 
-            width: 260px; 
-            float: right; 
-        } 
-        #section { 
-            width: 700px; 
-            float: left; 
-        } 
-        li { list-style: none; } 
-            @media screen and (max-width: 767px) { 
-                /* 스마트폰사이즈에서는전부해제합니다. */ 
-                body { width: auto } 
-                #menu { width: auto; float: none; } 
-                #section { width: auto; float: none; } 
-        } 
-    </style>
+<html>
+<head>
+  <title>패턴4</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <style> 
+      * { 
+          margin: 0; 
+          padding: 0;
+          box-sizing: border-box;
+      } 
+      body { 
+          width: 960px; 
+          margin: 0 auto; 
+          overflow: hidden; 
+          background-color: #f0f0f0; /* 배경색 fallback */
+          background-image: url('your-image-path.jpg'); /* 배경이미지 넣기 */
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          font-family: Arial, Helvetica, sans-serif; /* 기본 폰트로 변경 */
+          color: #333;
+          line-height: 1.6;
+      } 
+      #menu { 
+          width: 260px; 
+          float: right; 
+          background: rgba(255, 255, 255, 0.8); /* 반투명 배경 넣기 */
+          padding: 15px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      } 
+      #section { 
+          width: 700px; 
+          float: left; 
+          background: rgba(255, 255, 255, 0.9);
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      } 
+      li { 
+          list-style: none; 
+          margin-bottom: 8px;
+      } 
+      @media screen and (max-width: 767px) { 
+          body { width: auto; } 
+          #menu { width: auto; float: none; margin-top: 20px; } 
+          #section { width: auto; float: none; } 
+      } 
+  </style>
 </head>
 <body>
-    <div id="section">
-        <h1>종강이 다가오는</h1>
-        <p> 패딩을 입은지 어제 같은데 거울 속 나는 반팔을 입고 있다<p>
-        <p>  개강한지 어제 같은데 벌써 6월이다.</p>
-        <p> 중간고사를 끝낸지 어제 같은데 벌써 기말고사를 준비하고 있다.</p>
-            
-        <p>시간이 빠르게 흐른 걸까? 아님 내가 바쁘게 살고 있는 걸까?</p>
+  <div id="section">
+      <h1>종강이 다가오는</h1>
+      <p>패딩을 입은지 어제 같은데 거울 속 나는 반팔을 입고 있다.</p>
+      <p>개강한지 어제 같은데 벌써 6월이다.</p>
+      <p>중간고사를 끝낸지 어제 같은데 벌써 기말고사를 준비하고 있다.</p>
+      <p>시간이 빠르게 흐른 걸까? 아님 내가 바쁘게 살고 있는 걸까?</p>
+      <p>왜 이렇게 시간이 빠르게 흐르는건지.</p>
+      <p>나는 아직 기말고사를 준비하지도 못했는데 벌써 다음주에 시험을 본다고 한다.</p>
+      <p>이를 어쩌지... 이를 어쩌지...</p>
+      <p>기말고사가 두렵다 하지만 나는 종강은 좋다.</p>
+      <p>종강이 다가오고 있다.</p>
+  </div>
 
-         <p>왜 이렇게 시간이 빠르게 흐르는건지.</p>
-         <p>나는 아직 기말고사를 준비하지도 못했는데 벌써 다음주에 시험을 본다고 한다.</p>
-         <p>이를 어쩌지... 이를 어쩌지...</p>
-         <p>기말고사가 두렵다 하지만 나는 종강은 좋다. </p>
-        <p>종강이 다가오고 있다.
-        </p>
-    </div>
 </body>
-</html> 
+</html>
